@@ -4,8 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c231497549.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <picture>
+                <a href="../index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Logotipo de Funko Shop">
+                </a>
+            </picture>
+  
+            <ul>
+                <li>
+                    <a href="../pages/shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="../pages/contact.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="../pages/login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="../pages/cart.html"><img src="../img/icons/cart-icon.svg" alt="ícono de carrito"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>CARRITO DE COMPRAS</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>DETALLE DEL PRODUCTO</th>
+                        <th>CANTIDAD</th>
+                        <th>TOTAL</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <article>
+                                <!-- las clases hay que revisarlas, usé las que ya había para tener un feedback visual rápido -->
+                                <picture class="item__cover">
+                                    <img src="../img/star-wars/baby-yoda-1.webp" alt="baby yoda">
+                                </picture>
+                                <div>
+                                    <h3 class="item__title">BABY YODA BLUEBALL</h3>
+                                    <p class="item__text">Star Wars</p>
+                                    <p class="item__text">precio unitario: $ 1799,99</p>
+                                </div>
+                            </article>
+                        </td>
+                        <td>
+                            <form action="#">
+                                <input type="text" placeholder="cantidad">
+                                <button type="button"><i class="fa-solid fa-square-plus"></i></button>
+                                <button type="button"><i class="fa-solid fa-square-minus"></i></button>
+                            </form>
+                        </td>
+                        <td>
+                            <p>acaVaElMontoTotal</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <article>
+                                <!-- las clases hay que revisarlas, usé las que ya había para tener un feedback visual rápido -->
+                                <picture class="item__cover">
+                                    <img src="../img/pokemon/pidgeotto-1.webp" alt="pidgeotto">
+                                </picture>
+                                <div>
+                                    <h3 class="item__title">PIDGEOTTO</h3>
+                                    <p class="item__text">Pokemon</p>
+                                    <p class="item__text">precio unitario: $ 1799,99</p>
+                                </div>
+                            </article>
+                        </td>
+                        <td>
+                            <form action="#">
+                                <input type="text" placeholder="cantidad">
+                                <button type="button"><i class="fa-solid fa-square-plus"></i></button>
+                                <button type="button"><i class="fa-solid fa-square-minus"></i></button>
+                            </form>
+                        </td>
+                        <td>
+                            <p>acaVaElMontoTotal</p>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+
+            </table>
+        </section>
+
+        <section class="pay__containter">
+            <div class="pay__checkout">
+                <h2>RESUMEN</h2>                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CANTIDAD DE ELEMENTOS</th>
+                            <th>SUBTOTAL</th>
+                            <th>ENVIO</th>
+                            <th>TOTAL</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>varCantidad</td>
+                                <td>$ varPrecio</td>
+                                <td>$ varEnvio</td>
+                                <td>$ varTotal</td>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+                <button type="button" class="pay__button">IR A PAGAR</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../pages/shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="../pages/register.html">REGISTRARSE</a>
+                    </li>
+                    <li>
+                        <a href="../pages/login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="Logotipo de Funko Shop">
+            </picture>
+        </section>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
     
 </body>
 </html>
